@@ -9,11 +9,29 @@ body {
 
 .cart__product {
   position: relative;
+  margin-right: 20px;
 }
-.cart__product-count {
+
+.cart__product-remove {
   position: absolute;
   top: 0;
   right: 0;
+  border: 3px solid rgb(248, 100, 100);
+  border-radius: 50%;
+  padding: 0 6px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.cart__product-remove:hover {
+  background-color:rgb(64, 235, 121);
+  opacity: 0.8;
+}
+
+.cart__product-count {
+  position: absolute;
+  top: 0;
+  left: 0;
   border: 2px solid green;
   border-radius: 50%;
   padding: 2px 5px;
