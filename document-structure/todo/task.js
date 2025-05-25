@@ -29,7 +29,7 @@ function addTask(name) {
 taskForm.addEventListener("submit", (e) => {
     e.preventDefault();
         
-    const taskText = taskInput.value;
+    const taskText = taskInput.value.trim();
     if (taskText) {
         addTask(taskText);
         taskInput.value = "";
