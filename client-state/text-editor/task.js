@@ -2,10 +2,7 @@ const key = 'textContent';
 const editor = document.getElementById('editor');
 
 window.addEventListener('load', () => {
-    const text = localStorage.getItem(key);
-    if (text) {
-        editor.value = text;
-    }
+    editor.value = localStorage.getItem(key);
 });
 
 editor.addEventListener('input', () => {

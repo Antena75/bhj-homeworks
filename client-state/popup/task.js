@@ -22,5 +22,4 @@ function getCookie(name) {
     const cookie = pairs.find(p => p.startsWith(name + "="));
     return cookie.substring(name.length + 1, cookie.length);
     }
-    return;
 }
